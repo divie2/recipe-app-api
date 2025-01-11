@@ -18,7 +18,7 @@ jobs:
       - name: Install Docker Compose
         run: |
           sudo apt-get update
-          sudo apt-get install -y docker-compose=3.9
+          sudo apt-get install -y docker-compose=2.32.0
       - name: Test
         run: docker-compose run --rm app sh -c "python manage.py test"
       - name: Lint
